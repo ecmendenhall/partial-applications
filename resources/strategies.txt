@@ -1,0 +1,263 @@
+Search depth-first.
+Search breadth-first.
+Could you explain it to your grandparents?
+What is your hypothesis? Write it in words.
+What goes in? What comes out?
+What are you optimizing? Why?
+Try a different heuristic.
+Solve the metaproblem.
+Closer to the hardware.
+Further from the hardware.
+Take it apart and put it back together.
+Write an abstraction.
+Break an abstraction barrier.
+What are the trade-offs? Make a trade.
+Write more tests.
+Write the comments first.
+Make it stateless.
+Kludge now, fix later.
+Does it really have to be so precise?
+Change something unexpected and see what happens.
+Ask for help.
+Solve it recursively.
+Break it into little problems.
+Is it elegant?
+You are sculpting. Clay and hands or marble and chisel?
+What does the code want to look like?
+What can't you ship?
+Where are the interactions?
+Which parts are moving?
+What are you so sure of?
+Code on a whiteboard.
+Draw a picture.
+Substitute something unexpected.
+Try to break it.
+Is it a graph? It's probably a graph.
+Read it backwards.
+Which parts are tightly coupled?
+Climb a hill.
+Climb a thousand hills.
+Be greedier.
+Exaggerated hubris.
+What are you modeling?
+One hundred functions, one data structure. (Alan Perlis)
+Be very quiet. Your code is trying to talk to you. 
+If your procedure generates a recursive process, write one that generates an iterative process. If it generates an iterative process, write one that generates a recursive process.
+What don't you know? What can't you know?
+What can't you observe?
+What do you see? Are you sure?
+Build bottom-up.
+Start with the answer.
+Write exactly what you're trying to do in words.
+Read someone else's code.
+How much does this cost?
+Build a prototype. Break it.
+Translate it to another language.
+Be lazier.
+Make it more beautiful.
+Make it more simple.
+Flatten it.
+What rules are you breaking?
+What rules can you break?
+Which parts are implicit?
+Do you hear that? Make it louder.
+Print everything everywhere.
+Go to bed. It's 4am. 
+Write down everything you know about the problem. Go take a walk.
+Pretend you fixed it and carry on.
+A little better each time.
+What is undefined?
+Narrow the problem space.
+Brute force has many uses.
+Read a book.
+Who (what) is lying to you?
+Construct something isomorphic.
+Examine degenerate cases.
+Is your algorithm instructing you?
+Draw the structure. What does the problem want to look like?
+Eliminate the impossible. What's left?
+Is this the right tool?
+What can change? What has to stay the same?
+Describe the design pattern.
+Which parts are in conflict? You can't satisfy everyone.
+Try the other side of your brain.
+What's your intuiton? Turn up the contrast.
+What happens when you approach the limits?
+Try something at random.
+Write a TODO list.
+Start with the README.
+This would make a good blog post.
+New branch, clean slate.
+Use a different tool.
+Is there a better analogy?
+Ask someone older.
+Everything begins with a base case.
+What's your control?
+Evolve the solution.
+The tool you need is simpler than you think.
+Draw the decision tree.
+Close your laptop. Sit under a tree and read the documentation.
+Visualize it. What do you see?
+Are you solving the right problem?
+Apply a transformation.
+Time is a series of states.
+Facts are things, not places.
+What will break it?
+Which parts are you proud of?
+Which parts embarrass you?
+You are a scientist.
+Slow it down.
+Obliterate all luck.
+Focus. Blur. Focus.
+Remove the tiniest pieces until it collapses.
+Lean into sharp points.
+You are an artist.
+Examine the most obvious thing in exasperating detail.
+You are always a novice.
+Use the most boring tool you can think of.
+Write the instructions without words.
+How does it flow?
+What is the narrowest point?
+What if you're wrong?
+A good heuristic is optimistic.
+Move your body to a different place.
+Abstract something concrete.
+Write out an example.
+Satisfice, then optimize.
+Fast and frugal.
+What are your priors?
+Invert it.
+What happens in the worst case?
+Exploit randomness.
+Introduce a mutation.
+Apply a filter. What's the test condition?
+What are the simplest parts?
+This is just a problem set.
+If this were an exam question, what would it be?
+Do the math.
+What worked last time? Ignore it.
+Your idea is not as special as you think.
+Marginal change. Marginal changes.
+One whole, many parts.
+Iterative improvement.
+Write it as math.
+Be more precise.
+Smaller steps.
+The model is not the system.
+Try your silliest idea.
+Focus on the boring parts.
+Why?
+What if there were no constraints?
+Why is it divided like that?
+What would a child ask?
+How does nature do it?
+Many solutions, not just one.
+Refine. Combine. Refine.
+Think in another language.
+What are the side effects?
+Use a tool that intimidates you.
+Teach it to yourself.
+What bothers you?
+Show the world your worst rough draft.
+Omit needless words.
+Reduce.
+Map.
+Filter.
+Sort into groups.
+How many dimensions?
+Describe everything.
+Relax a requirement and tighten it later.
+Prophesy the future.
+One idea at a time.
+All conjecture is a creative act.
+Problems are soluble. Problems are inevitable. (David Deutsch)
+Check your work.
+Systematic oversimplification.
+Criticize it.
+What is the unknown? What are the data? (Polya)
+Practicality beats purity. (Zen of Python)
+Make it more readable.
+Is it testable? Are you sure?
+Rejoice in corner cases.
+Maximize marginal improvement.
+Bad memes can spread fast.
+Switch roles: you are the computer. Your code will do the thinking.
+Use different symbols.
+Use a dirty trick.
+Not changing, flowing.
+Complexity is not randomness.
+Good taste matters.
+Is your solution the problem?
+Broader input, better output. (Rich Hickey)
+Subject yourself to withering criticism.
+Get away from the computer.
+Beware local maxima.
+Celebrate local maxima.
+Strategy precedes tactics.
+Balance is an overlooked virtue.
+Practice radical openness.
+Math is beautiful. Words are readable. (Words are beautiful, math is readable) 
+More like prose, less like math.
+Line by line, bird by bird. (Annie Lamott)
+Ordinary tools can be violent and original. (William Styron, sort of, via Flaubert, sort of)
+Software is a model of intention. (Tractatus)
+A program is not a blend of instructions. (A theme in music is not a blend of notes.) (Tractatus)
+A program is articulate. (Tractatus)
+Sleep on it.
+Fear is the mind-killer.
+Change the notation.
+Patience.
+As simple as possible, but no simpler.
+Reduce the dimensions.
+Examine repeatedly, in different ways. (Polya)
+What worked last time?
+Decompose. Recombine.
+Bolt something on.
+Planning is overrated.
+The limits of my language mean the limits of my world. (Wittgenstein)
+Say no to something.
+Defaults are powerful. Check your settings.
+Make something that frightens you.
+Solve the hardest problem first.
+Bigger concepts.
+You are a human.
+Plans should be proportional to risk.
+Use your secret weapon.
+Both clean and dirty.
+Are the bottlenecks where you think they are?
+The most important part of design is redesign. (Paul Graham)
+When payoffs are poor, restructure the rules.
+Would you want to use it?
+Successive approximation.
+Different kinds of symmetry: Repetition, recursion. (Paul Graham)
+Some complex solutions cannot be designed.
+Designed, but unplanned.
+Throwing away bad work is an act of courage.
+Carefully engineer your mistakes.
+Unconscious imitation, conscious originality, conscious imitation. (Paul Graham, sort of)
+Weirdness is organic: to be embraced, not cultivated. (PG)
+Truth sometimes fails the test suite.
+Accurate measurements, not easy ones.
+New versus good. (PG)
+Too much choice is paralyzing.
+Two trees: designed, evolved.
+Diminishing marginal returns.
+You are writing an essay.
+Layers.
+Write down the program you'd like to write. (PG)
+Imaginative and ugly solutions both break the rules (PG)
+Good writing is rewriting. (E.B. White)
+The hardest problem is sometimes the easiest to overlook.
+Most important first.
+Reuse standard tools.
+Abstraction is a natural phenomenon. Where are the frontiers?
+Simple is not easy.
+Feedback fights uncertainty.
+Don't teach to the test(s).
+Three meanings of naive: crude, unenlightened, bold.
+What are you curious about?
+Why do you have two of those?
+Clear your cache.
+Your model is always wrong.
+Soluble problems dissolve. (All problems are soluble)
+Someone else has solved this problem.

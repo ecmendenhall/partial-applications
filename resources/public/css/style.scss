@@ -1,0 +1,148 @@
+@import "colorschemes";
+
+@mixin scale($unit) {
+
+    body {
+        font-size: $unit * 10; //32px;
+    }
+
+    footer {
+       bottom: $unit * 6; //24px;
+       height: $unit * 8; //32px;
+    }
+
+    footer p {
+        top: $unit * 4.5; //18px;
+    }
+
+    .statusline {
+        bottom: $unit * 3; //12px;
+        font-size: $unit * 4.5; //18px;
+        margin-left: $unit * 3; //12px;
+        margin-right: $unit * 3; //12px;
+    }
+
+    #colormenu {
+        font-size: $unit * 4.5; //18px;
+        bottom: $unit * 12; //48px;
+        li { margin: 0px;
+             height: $unit * 8; //32px;
+        }
+        a { position: relative;
+            top: $unit;
+            padding-left: $unit * 3;
+            margin: 0px; }
+        ul { 
+            padding: 0px;
+            margin: 0px;
+        }
+        right: $unit * 7; //28px;
+        margin: 0px;
+        width: $unit * 50; //200px;
+    }
+
+    #order {
+       top: $unit * 11; //44px;
+       left: $unit * -3; //12px;
+       height: $unit * 8; //32px;
+    }
+
+    #order p {
+        top: 0px;
+    }
+
+    .cursor {
+        top: $unit * .5; //2px;
+        width: $unit * 3; //12px;
+        height: $unit * 4.5; //18px;
+    }
+
+    .small {
+        font-size: $unit * 4.5;
+    }
+
+    .large { margin-top: $unit * 63; }
+
+    ul p { 
+        margin-bottom: $unit;
+    }
+
+    li { margin-top: $unit * 9; }
+}
+
+@include scale(4px);
+
+@media (min-width: 0px) and (max-width: 550px) {
+    @include scale(3px);
+    .accent2 { display: none; }
+}
+
+@media (min-width: 550px) and (max-width: 740px) {
+    @include scale(3px);
+}
+
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    font-family: 'Menlo', 'Monaco', Monospace;
+}
+
+ul { 
+   list-style-type: none;
+}
+
+footer {
+   position: fixed;
+   left: 0px;
+   width: 100%;
+}
+
+footer p {
+    position: relative;
+    display: inline;
+}
+
+.statusline {
+    position: relative;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+#order {
+    position: absolute;
+    display: inline;
+}
+
+#order {
+    width: 100%;
+}
+
+.cursor {
+    position: absolute;
+}
+
+.small { 
+    margin-top: 10%;
+}
+.large { 
+    margin-top: 30%;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+#colormenu {
+    position: fixed;
+}

@@ -1,0 +1,129 @@
+$bg-zenburn: #3f3f3f;
+$text-zenburn: #dcdccc;
+$accent1-zenburn: #8cd0d3;
+$accent2-zenburn: #cc9393;
+$accent3-zenburn: #efdcbc;
+
+$bg-solarized1: #002b36;
+$text-solarized1: #657b83;
+$accent1-solarized1: #2aa198;
+$accent2-solarized1: #d30102;
+$accent3-solarized1: #6c71c4;
+
+$bg-solarized2: #fdf6e3;
+$text-solarized2:#657b83;
+$accent1-solarized2: #2aa198;
+$accent2-solarized2: #b58900;
+$accent3-solarized2: #859900;
+
+$bg-tomorrow: #ffffff;
+$text-tomorrow: #4d4d4c;
+$accent1-tomorrow: #f5871f;
+$accent2-tomorrow: #8959a8;
+$accent3-tomorrow: #3e999f;
+
+$bg-tomorrownight: #2d2d2d;
+$text-tomorrownight: #cccccc;
+$accent1-tomorrownight: #f99157;
+$accent2-tomorrownight: #99cc99;
+$accent3-tomorrownight: #6699cc;
+
+$bg-monokai: #111111;
+$text-monokai: #f8f8f2;
+$accent1-monokai: #f92672;
+$accent2-monokai: #e6db74;
+$accent3-monokai: #ae81ff;
+
+
+@mixin colorscheme($bg, $text, $accent1, $accent2, $accent3) {
+    background-color: $bg;
+    p, h1, h2, h3 { color: $text; }
+    .hex { color: $accent1; }
+    footer { 
+        background-color: darken($bg, 4%);
+        a { color: $text;}
+    }
+    .accent2 { color: $accent2; }
+    .accent3 { color: $accent3; }
+    .on { background: $text; }
+    .off { background: $bg; }
+    a { 
+        text-decoration: none;
+        color: $accent3;
+    }
+    a:hover { color: $accent3; }
+    #order { background-color: $bg; }
+    #colormenu { background-color: darken($bg, 4%); }
+    #colormenu > ul > li:hover { background-color: darken($bg, 8%); }
+
+}
+
+@mixin zenburn {
+    .zenburn {
+        @include colorscheme($bg-zenburn, 
+                             $text-zenburn, 
+                             $accent1-zenburn, 
+                             $accent2-zenburn, 
+                             $accent3-zenburn)
+                         }
+}
+
+@mixin solarized-dark {
+    .solarized-dark {
+        @include colorscheme($bg-solarized1, 
+                             $text-solarized1, 
+                             $accent1-solarized1, 
+                             $accent2-solarized1, 
+                             $accent3-solarized1)
+                         }
+}
+
+@mixin solarized-light {
+    .solarized-light {
+        @include colorscheme($bg-solarized2, 
+                             $text-solarized2, 
+                             $accent1-solarized2, 
+                             $accent2-solarized2, 
+                             $accent3-solarized2)
+                         }
+}
+
+@mixin tomorrow {
+    .tomorrow {
+        @include colorscheme($bg-tomorrow, 
+                             $text-tomorrow, 
+                             $accent1-tomorrow, 
+                             $accent2-tomorrow, 
+                             $accent3-tomorrow)
+                         }
+}
+
+@mixin tomorrownight {
+    .tomorrow-night {
+        @include colorscheme($bg-tomorrownight, 
+                             $text-tomorrownight, 
+                             $accent1-tomorrownight, 
+                             $accent2-tomorrownight, 
+                             $accent3-tomorrownight)
+                         }
+}
+
+@mixin monokai {
+    .monokai {
+        @include colorscheme($bg-monokai, 
+                             $text-monokai, 
+                             $accent1-monokai, 
+                             $accent2-monokai, 
+                             $accent3-monokai)
+                         }
+}
+
+
+
+
+@include zenburn;
+@include solarized-dark;
+@include solarized-light;
+@include tomorrow;
+@include tomorrownight;
+@include monokai;
