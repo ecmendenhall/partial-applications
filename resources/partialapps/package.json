@@ -1,0 +1,14 @@
+{
+    "name": "partialapps",
+    "version": "0.0.2",
+    "description": "A command-line interface to Partial Applications, a collection of questions, ideas, and aphorisms to inspire creative solutions to difficult programming problems.",
+    "author": { "name": "Connor Mendenhall", 
+                "email": "e@cmendenhall.com", 
+                "url": "http://e.cmendenhall.com/"},
+    "bugs": { "url": "http://github.com/ecmendenhall/partial-applications/issues", 
+              "email": "e@cmendenhall.com"},
+    "files": ["strategies.json", "README.md"],
+    "bin": { "partialapps": "./partialapps.js" },
+    "dependencies": { "optimist": ">=0.3.5" },
+    "preferGlobal": "true"
+}

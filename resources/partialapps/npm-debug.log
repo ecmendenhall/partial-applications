@@ -1,0 +1,379 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'partialapps' ]
+2 info using npm@1.2.10
+3 info using node@v0.8.19
+4 verbose node symlink /usr/local/bin/node
+5 verbose read json /usr/local/lib/package.json
+6 verbose read json /usr/local/lib/package.json
+7 verbose cache add [ 'partialapps', null ]
+8 verbose cache add name=undefined spec="partialapps" args=["partialapps",null]
+9 verbose parsed url { pathname: 'partialapps',
+9 verbose parsed url   path: 'partialapps',
+9 verbose parsed url   href: 'partialapps' }
+10 silly lockFile 6b3ae2dc-partialapps partialapps
+11 verbose lock partialapps /Users/ecm/.npm/6b3ae2dc-partialapps.lock
+12 silly lockFile 6b3ae2dc-partialapps partialapps
+13 silly lockFile 6b3ae2dc-partialapps partialapps
+14 verbose addNamed [ 'partialapps', '' ]
+15 verbose addNamed [ null, '' ]
+16 silly lockFile 9b33277d-partialapps partialapps@
+17 verbose lock partialapps@ /Users/ecm/.npm/9b33277d-partialapps.lock
+18 silly addNameRange { name: 'partialapps', range: '', hasData: false }
+19 verbose url raw partialapps
+20 verbose url resolving [ 'https://registry.npmjs.org/', './partialapps' ]
+21 verbose url resolved https://registry.npmjs.org/partialapps
+22 info trying registry request attempt 1 at 00:58:20
+23 http GET https://registry.npmjs.org/partialapps
+24 http 200 https://registry.npmjs.org/partialapps
+25 silly registry.get cb [ 200,
+25 silly registry.get   { vary: 'Accept',
+25 silly registry.get     server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+25 silly registry.get     etag: '"PQC63AKVO2CMMV5R01ZUJAIX"',
+25 silly registry.get     date: 'Fri, 15 Feb 2013 07:56:23 GMT',
+25 silly registry.get     'content-type': 'application/json',
+25 silly registry.get     'content-length': '3834' } ]
+26 silly addNameRange number 2 { name: 'partialapps', range: '', hasData: true }
+27 silly addNameRange versions [ 'partialapps', [ '0.0.1', '0.0.2' ] ]
+28 verbose addNamed [ 'partialapps', '0.0.2' ]
+29 verbose addNamed [ '0.0.2', '0.0.2' ]
+30 silly lockFile 5c718a76-partialapps-0-0-2 partialapps@0.0.2
+31 verbose lock partialapps@0.0.2 /Users/ecm/.npm/5c718a76-partialapps-0-0-2.lock
+32 verbose read json /Users/ecm/.npm/partialapps/0.0.2/package/package.json
+33 silly lockFile 5c718a76-partialapps-0-0-2 partialapps@0.0.2
+34 silly lockFile 5c718a76-partialapps-0-0-2 partialapps@0.0.2
+35 silly lockFile 9b33277d-partialapps partialapps@
+36 silly lockFile 9b33277d-partialapps partialapps@
+37 silly resolved [ { name: 'partialapps',
+37 silly resolved     version: '0.0.2',
+37 silly resolved     description: 'A command-line interface to Partial Applications, a collection of questions, ideas, and aphorisms to inspire creative solutions to difficult programming problems.',
+37 silly resolved     author:
+37 silly resolved      { name: 'Connor Mendenhall',
+37 silly resolved        email: 'e@cmendenhall.com',
+37 silly resolved        url: 'http://e.cmendenhall.com/' },
+37 silly resolved     bugs:
+37 silly resolved      { url: 'http://github.com/ecmendenhall/partial-applications/issues',
+37 silly resolved        email: 'e@cmendenhall.com' },
+37 silly resolved     files: [ 'strategies.json', 'README.md' ],
+37 silly resolved     bin: { partialapps: './partialapps.js' },
+37 silly resolved     dependencies: { optimist: '>=0.3.5' },
+37 silly resolved     preferGlobal: 'true',
+37 silly resolved     readme: '`partialapp` is a command-line interface to Partial Applications,\na set of questions, ideas, and aphorisms to inspire creative solutions \nto difficult programming problems inspired by Brian Eno\'s Oblique Strategies.\nThis code is released under an MIT license. See all the details on \n[GitHub](https://github.com/ecmendenhall/partial-applications).\n',
+37 silly resolved     readmeFilename: 'README.md',
+37 silly resolved     _id: 'partialapps@0.0.2',
+37 silly resolved     _from: 'partialapps@' } ]
+38 info install partialapps@0.0.2 into /usr/local/lib
+39 info installOne partialapps@0.0.2
+40 verbose from cache /Users/ecm/.npm/partialapps/0.0.2/package/package.json
+41 info /usr/local/lib/node_modules/partialapps unbuild
+42 verbose read json /usr/local/lib/node_modules/partialapps/package.json
+43 verbose tar unpack /Users/ecm/.npm/partialapps/0.0.2/package.tgz
+44 silly lockFile b4f6f002-cal-lib-node-modules-partialapps /usr/local/lib/node_modules/partialapps
+45 verbose lock /usr/local/lib/node_modules/partialapps /Users/ecm/.npm/b4f6f002-cal-lib-node-modules-partialapps.lock
+46 silly lockFile fb4448d7-pm-partialapps-0-0-2-package-tgz /Users/ecm/.npm/partialapps/0.0.2/package.tgz
+47 verbose lock /Users/ecm/.npm/partialapps/0.0.2/package.tgz /Users/ecm/.npm/fb4448d7-pm-partialapps-0-0-2-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 silly gunzTarPerm extractEntry package.json
+50 silly gunzTarPerm extractEntry README.md
+51 silly gunzTarPerm extractEntry strategies.json
+52 verbose read json /usr/local/lib/node_modules/partialapps/package.json
+53 silly lockFile b4f6f002-cal-lib-node-modules-partialapps /usr/local/lib/node_modules/partialapps
+54 silly lockFile b4f6f002-cal-lib-node-modules-partialapps /usr/local/lib/node_modules/partialapps
+55 silly lockFile fb4448d7-pm-partialapps-0-0-2-package-tgz /Users/ecm/.npm/partialapps/0.0.2/package.tgz
+56 silly lockFile fb4448d7-pm-partialapps-0-0-2-package-tgz /Users/ecm/.npm/partialapps/0.0.2/package.tgz
+57 info preinstall partialapps@0.0.2
+58 verbose from cache /usr/local/lib/node_modules/partialapps/package.json
+59 verbose readDependencies using package.json deps
+60 verbose from cache /usr/local/lib/node_modules/partialapps/package.json
+61 verbose readDependencies using package.json deps
+62 verbose cache add [ 'optimist@>=0.3.5', null ]
+63 verbose cache add name=undefined spec="optimist@>=0.3.5" args=["optimist@>=0.3.5",null]
+64 verbose parsed url { pathname: 'optimist@%3E=0.3.5',
+64 verbose parsed url   path: 'optimist@%3E=0.3.5',
+64 verbose parsed url   href: 'optimist@%3E=0.3.5' }
+65 verbose cache add name="optimist" spec=">=0.3.5" args=["optimist",">=0.3.5"]
+66 verbose parsed url { pathname: '%3E=0.3.5', path: '%3E=0.3.5', href: '%3E=0.3.5' }
+67 verbose addNamed [ 'optimist', '>=0.3.5' ]
+68 verbose addNamed [ null, '>=0.3.5' ]
+69 silly lockFile 37e2739b-optimist-0-3-5 optimist@>=0.3.5
+70 verbose lock optimist@>=0.3.5 /Users/ecm/.npm/37e2739b-optimist-0-3-5.lock
+71 silly addNameRange { name: 'optimist', range: '>=0.3.5', hasData: false }
+72 verbose url raw optimist
+73 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+74 verbose url resolved https://registry.npmjs.org/optimist
+75 info trying registry request attempt 1 at 00:58:21
+76 verbose etag "9D1B7FWV00OM6KTPQSQM9T6OL"
+77 http GET https://registry.npmjs.org/optimist
+78 http 304 https://registry.npmjs.org/optimist
+79 silly registry.get cb [ 304,
+79 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+79 silly registry.get     etag: '"9D1B7FWV00OM6KTPQSQM9T6OL"',
+79 silly registry.get     date: 'Fri, 15 Feb 2013 07:56:23 GMT',
+79 silly registry.get     'content-length': '0' } ]
+80 verbose etag optimist from cache
+81 silly addNameRange number 2 { name: 'optimist', range: '>=0.3.5', hasData: true }
+82 silly addNameRange versions [ 'optimist',
+82 silly addNameRange   [ '0.0.1',
+82 silly addNameRange     '0.0.2',
+82 silly addNameRange     '0.0.4',
+82 silly addNameRange     '0.0.5',
+82 silly addNameRange     '0.0.6',
+82 silly addNameRange     '0.0.7',
+82 silly addNameRange     '0.1.0',
+82 silly addNameRange     '0.1.1',
+82 silly addNameRange     '0.1.2',
+82 silly addNameRange     '0.1.3',
+82 silly addNameRange     '0.1.4',
+82 silly addNameRange     '0.1.5',
+82 silly addNameRange     '0.1.6',
+82 silly addNameRange     '0.1.7',
+82 silly addNameRange     '0.1.8',
+82 silly addNameRange     '0.1.9',
+82 silly addNameRange     '0.0.3',
+82 silly addNameRange     '0.2.0',
+82 silly addNameRange     '0.2.1',
+82 silly addNameRange     '0.2.2',
+82 silly addNameRange     '0.2.3',
+82 silly addNameRange     '0.2.4',
+82 silly addNameRange     '0.2.5',
+82 silly addNameRange     '0.2.6',
+82 silly addNameRange     '0.2.7',
+82 silly addNameRange     '0.2.8',
+82 silly addNameRange     '0.3.0',
+82 silly addNameRange     '0.3.1',
+82 silly addNameRange     '0.3.3',
+82 silly addNameRange     '0.3.4',
+82 silly addNameRange     '0.3.5' ] ]
+83 verbose addNamed [ 'optimist', '0.3.5' ]
+84 verbose addNamed [ '0.3.5', '0.3.5' ]
+85 silly lockFile 72e2da2d-optimist-0-3-5 optimist@0.3.5
+86 verbose lock optimist@0.3.5 /Users/ecm/.npm/72e2da2d-optimist-0-3-5.lock
+87 verbose read json /Users/ecm/.npm/optimist/0.3.5/package/package.json
+88 silly lockFile 72e2da2d-optimist-0-3-5 optimist@0.3.5
+89 silly lockFile 72e2da2d-optimist-0-3-5 optimist@0.3.5
+90 silly lockFile 37e2739b-optimist-0-3-5 optimist@>=0.3.5
+91 silly lockFile 37e2739b-optimist-0-3-5 optimist@>=0.3.5
+92 silly resolved [ { name: 'optimist',
+92 silly resolved     version: '0.3.5',
+92 silly resolved     description: 'Light-weight option parsing with an argv hash. No optstrings attached.',
+92 silly resolved     main: './index.js',
+92 silly resolved     directories: { lib: '.', test: 'test', example: 'example' },
+92 silly resolved     dependencies: { wordwrap: '~0.0.2' },
+92 silly resolved     devDependencies: { hashish: '~0.0.4', tap: '~0.2.4' },
+92 silly resolved     scripts: { test: 'tap ./test/*.js' },
+92 silly resolved     repository:
+92 silly resolved      { type: 'git',
+92 silly resolved        url: 'http://github.com/substack/node-optimist.git' },
+92 silly resolved     keywords:
+92 silly resolved      [ 'argument',
+92 silly resolved        'args',
+92 silly resolved        'option',
+92 silly resolved        'parser',
+92 silly resolved        'parsing',
+92 silly resolved        'cli',
+92 silly resolved        'command' ],
+92 silly resolved     author:
+92 silly resolved      { name: 'James Halliday',
+92 silly resolved        email: 'mail@substack.net',
+92 silly resolved        url: 'http://substack.net' },
+92 silly resolved     license: 'MIT/X11',
+92 silly resolved     engine: { node: '>=0.4' },
+92 silly resolved     readme: 'optimist\n========\n\nOptimist is a node.js library for option parsing for people who hate option\nparsing. More specifically, this module is for people who like all the --bells\nand -whistlz of program usage but think optstrings are a waste of time.\n\nWith optimist, option parsing doesn\'t have to suck (as much).\n\n[![build status](https://secure.travis-ci.org/substack/node-optimist.png)](http://travis-ci.org/substack/node-optimist)\n\nexamples\n========\n\nWith Optimist, the options are just a hash! No optstrings attached.\n-------------------------------------------------------------------\n\nxup.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\n\nif (argv.rif - 5 * argv.xup > 7.138) {\n    console.log(\'Buy more riffiwobbles\');\n}\nelse {\n    console.log(\'Sell the xupptumblers\');\n}\n````\n\n***\n\n    $ ./xup.js --rif=55 --xup=9.52\n    Buy more riffiwobbles\n    \n    $ ./xup.js --rif 12 --xup 8.1\n    Sell the xupptumblers\n\n![This one\'s optimistic.](http://substack.net/images/optimistic.png)\n\nBut wait! There\'s more! You can do short options:\n-------------------------------------------------\n \nshort.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\nconsole.log(\'(%d,%d)\', argv.x, argv.y);\n````\n\n***\n\n    $ ./short.js -x 10 -y 21\n    (10,21)\n\nAnd booleans, both long and short (and grouped):\n----------------------------------\n\nbool.js:\n\n````javascript\n#!/usr/bin/env node\nvar util = require(\'util\');\nvar argv = require(\'optimist\').argv;\n\nif (argv.s) {\n    util.print(argv.fr ? \'Le chat dit: \' : \'The cat says: \');\n}\nconsole.log(\n    (argv.fr ? \'miaou\' : \'meow\') + (argv.p ? \'.\' : \'\')\n);\n````\n\n***\n\n    $ ./bool.js -s\n    The cat says: meow\n    \n    $ ./bool.js -sp\n    The cat says: meow.\n\n    $ ./bool.js -sp --fr\n    Le chat dit: miaou.\n\nAnd non-hypenated options too! Just use `argv._`!\n-------------------------------------------------\n \nnonopt.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\nconsole.log(\'(%d,%d)\', argv.x, argv.y);\nconsole.log(argv._);\n````\n\n***\n\n    $ ./nonopt.js -x 6.82 -y 3.35 moo\n    (6.82,3.35)\n    [ \'moo\' ]\n    \n    $ ./nonopt.js foo -x 0.54 bar -y 1.12 baz\n    (0.54,1.12)\n    [ \'foo\', \'bar\', \'baz\' ]\n\nPlus, Optimist comes with .usage() and .demand()!\n-------------------------------------------------\n\ndivide.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .usage(\'Usage: $0 -x [num] -y [num]\')\n    .demand([\'x\',\'y\'])\n    .argv;\n\nconsole.log(argv.x / argv.y);\n````\n\n***\n \n    $ ./divide.js -x 55 -y 11\n    5\n    \n    $ node ./divide.js -x 4.91 -z 2.51\n    Usage: node ./divide.js -x [num] -y [num]\n\n    Options:\n      -x  [required]\n      -y  [required]\n\n    Missing required arguments: y\n\nEVEN MORE HOLY COW\n------------------\n\ndefault_singles.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .default(\'x\', 10)\n    .default(\'y\', 10)\n    .argv\n;\nconsole.log(argv.x + argv.y);\n````\n\n***\n\n    $ ./default_singles.js -x 5\n    15\n\ndefault_hash.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .default({ x : 10, y : 10 })\n    .argv\n;\nconsole.log(argv.x + argv.y);\n````\n\n***\n\n    $ ./default_hash.js -y 7\n    17\n\nAnd if you really want to get all descriptive about it...\n---------------------------------------------------------\n\nboolean_single.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .boolean(\'v\')\n    .argv\n;\nconsole.dir(argv);\n````\n\n***\n\n    $ ./boolean_single.js -v foo bar baz\n    true\n    [ \'bar\', \'baz\', \'foo\' ]\n\nboolean_double.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .boolean([\'x\',\'y\',\'z\'])\n    .argv\n;\nconsole.dir([ argv.x, argv.y, argv.z ]);\nconsole.dir(argv._);\n````\n\n***\n\n    $ ./boolean_double.js -x -z one two three\n    [ true, false, true ]\n    [ \'one\', \'two\', \'three\' ]\n\nOptimist is here to help...\n---------------------------\n\nYou can describe parameters for help messages and set aliases. Optimist figures\nout how to format a handy help string automatically.\n\nline_count.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .usage(\'Count the lines in a file.\\nUsage: $0\')\n    .demand(\'f\')\n    .alias(\'f\', \'file\')\n    .describe(\'f\', \'Load a file\')\n    .argv\n;\n\nvar fs = require(\'fs\');\nvar s = fs.createReadStream(argv.file);\n\nvar lines = 0;\ns.on(\'data\', function (buf) {\n    lines += buf.toString().match(/\\n/g).length;\n});\n\ns.on(\'end\', function () {\n    console.log(lines);\n});\n````\n\n***\n\n    $ node line_count.js\n    Count the lines in a file.\n    Usage: node ./line_count.js\n\n    Options:\n      -f, --file  Load a file  [required]\n\n    Missing required arguments: f\n\n    $ node line_count.js --file line_count.js \n    20\n    \n    $ node line_count.js -f line_count.js \n    20\n\nmethods\n=======\n\nBy itself,\n\n````javascript\nrequire(\'optimist\').argv\n`````\n\nwill use `process.argv` array to construct the `argv` object.\n\nYou can pass in the `process.argv` yourself:\n\n````javascript\nrequire(\'optimist\')([ \'-x\', \'1\', \'-y\', \'2\' ]).argv\n````\n\nor use .parse() to do the same thing:\n\n````javascript\nrequire(\'optimist\').parse([ \'-x\', \'1\', \'-y\', \'2\' ])\n````\n\nThe rest of these methods below come in just before the terminating `.argv`.\n\n.alias(key, alias)\n------------------\n\nSet key names as equivalent such that updates to a key will propagate to aliases\nand vice-versa.\n\nOptionally `.alias()` can take an object that maps keys to aliases.\n\n.default(key, value)\n--------------------\n\nSet `argv[key]` to `value` if no option was specified on `process.argv`.\n\nOptionally `.default()` can take an object that maps keys to default values.\n\n.demand(key)\n------------\n\nIf `key` is a string, show the usage information and exit if `key` wasn\'t\nspecified in `process.argv`.\n\nIf `key` is a number, demand at least as many non-option arguments, which show\nup in `argv._`.\n\nIf `key` is an Array, demand each element.\n\n.describe(key, desc)\n--------------------\n\nDescribe a `key` for the generated usage information.\n\nOptionally `.describe()` can take an object that maps keys to descriptions.\n\n.options(key, opt)\n------------------\n\nInstead of chaining together `.alias().demand().default()`, you can specify\nkeys in `opt` for each of the chainable methods.\n\nFor example:\n\n````javascript\nvar argv = require(\'optimist\')\n    .options(\'f\', {\n        alias : \'file\',\n        default : \'/etc/passwd\',\n    })\n    .argv\n;\n````\n\nis the same as\n\n````javascript\nvar argv = require(\'optimist\')\n    .alias(\'f\', \'file\')\n    .default(\'f\', \'/etc/passwd\')\n    .argv\n;\n````\n\nOptionally `.options()` can take an object that maps keys to `opt` parameters.\n\n.usage(message)\n---------------\n\nSet a usage message to show which commands to use. Inside `message`, the string\n`$0` will get interpolated to the current script name or node command for the\npresent script similar to how `$0` works in bash or perl.\n\n.check(fn)\n----------\n\nCheck that certain conditions are met in the provided arguments.\n\nIf `fn` throws or returns `false`, show the thrown error, usage information, and\nexit.\n\n.boolean(key)\n-------------\n\nInterpret `key` as a boolean. If a non-flag option follows `key` in\n`process.argv`, that string won\'t get set as the value of `key`.\n\nIf `key` never shows up as a flag in `process.arguments`, `argv[key]` will be\n`false`.\n\nIf `key` is an Array, interpret all the elements as booleans.\n\n.string(key)\n------------\n\nTell the parser logic not to interpret `key` as a number or boolean.\nThis can be useful if you need to preserve leading zeros in an input.\n\nIf `key` is an Array, interpret all the elements as strings.\n\n.wrap(columns)\n--------------\n\nFormat usage output to wrap at `columns` many columns.\n\n.help()\n-------\n\nReturn the generated usage string.\n\n.showHelp(fn=console.error)\n---------------------------\n\nPrint the usage data using `fn` for printing.\n\n.parse(args)\n------------\n\nParse `args` instead of `process.argv`. Returns the `argv` object.\n\n.argv\n-----\n\nGet the arguments as a plain old object.\n\nArguments without a corresponding flag show up in the `argv._` array.\n\nThe script name or node command is available at `argv.$0` similarly to how `$0`\nworks in bash or perl.\n\nparsing tricks\n==============\n\nstop parsing\n------------\n\nUse `--` to stop parsing flags and stuff the remainder into `argv._`.\n\n    $ node examples/reflect.js -a 1 -b 2 -- -c 3 -d 4\n    { _: [ \'-c\', \'3\', \'-d\', \'4\' ],\n      \'$0\': \'node ./examples/reflect.js\',\n      a: 1,\n      b: 2 }\n\nnegate fields\n-------------\n\nIf you want to explicity set a field to false instead of just leaving it\nundefined or to override a default you can do `--no-key`.\n\n    $ node examples/reflect.js -a --no-b\n    { _: [],\n      \'$0\': \'node ./examples/reflect.js\',\n      a: true,\n      b: false }\n\nnumbers\n-------\n\nEvery argument that looks like a number (`!isNaN(Number(arg))`) is converted to\none. This way you can just `net.createConnection(argv.port)` and you can add\nnumbers out of `argv` with `+` without having that mean concatenation,\nwhich is super frustrating.\n\nduplicates\n----------\n\nIf you specify a flag multiple times it will get turned into an array containing\nall the values in order.\n\n    $ node examples/reflect.js -x 5 -x 8 -x 0\n    { _: [],\n      \'$0\': \'node ./examples/reflect.js\',\n        x: [ 5, 8, 0 ] }\n\ndot notation\n------------\n\nWhen you use dots (`.`s) in argument names, an implicit object path is assumed.\nThis lets you organize arguments into nested objects.\n\n     $ node examples/reflect.js --foo.bar.baz=33 --foo.quux=5\n     { _: [],\n       \'$0\': \'node ./examples/reflect.js\',\n         foo: { bar: { baz: 33 }, quux: 5 } }\n\ninstallation\n============\n\nWith [npm](http://github.com/isaacs/npm), just do:\n    npm install optimist\n \nor clone this project on github:\n\n    git clone http://github.com/substack/node-optimist.git\n\nTo run the tests with [expresso](http://github.com/visionmedia/expresso),\njust do:\n    \n    expresso\n\ninspired By\n===========\n\nThis module is loosely inspired by Perl\'s\n[Getopt::Casual](http://search.cpan.org/~photo/Getopt-Casual-0.13.1/Casual.pm).\n',
+92 silly resolved     readmeFilename: 'README.markdown',
+92 silly resolved     _id: 'optimist@0.3.5',
+92 silly resolved     _from: 'optimist@>=0.3.5' } ]
+93 info install optimist@0.3.5 into /usr/local/lib/node_modules/partialapps
+94 info installOne optimist@0.3.5
+95 verbose from cache /Users/ecm/.npm/optimist/0.3.5/package/package.json
+96 info /usr/local/lib/node_modules/partialapps/node_modules/optimist unbuild
+97 verbose read json /usr/local/lib/node_modules/partialapps/node_modules/optimist/package.json
+98 verbose tar unpack /Users/ecm/.npm/optimist/0.3.5/package.tgz
+99 silly lockFile 18bc975a-artialapps-node-modules-optimist /usr/local/lib/node_modules/partialapps/node_modules/optimist
+100 verbose lock /usr/local/lib/node_modules/partialapps/node_modules/optimist /Users/ecm/.npm/18bc975a-artialapps-node-modules-optimist.lock
+101 silly lockFile be965750-m-npm-optimist-0-3-5-package-tgz /Users/ecm/.npm/optimist/0.3.5/package.tgz
+102 verbose lock /Users/ecm/.npm/optimist/0.3.5/package.tgz /Users/ecm/.npm/be965750-m-npm-optimist-0-3-5-package-tgz.lock
+103 silly gunzTarPerm modes [ '755', '644' ]
+104 silly gunzTarPerm extractEntry package.json
+105 silly gunzTarPerm extractEntry LICENSE
+106 silly gunzTarPerm extractEntry index.js
+107 silly gunzTarPerm extractEntry x.js
+108 silly gunzTarPerm extractEntry .travis.yml
+109 silly gunzTarPerm extractEntry example/bool.js
+110 silly gunzTarPerm extractEntry example/default_singles.js
+111 silly gunzTarPerm extractEntry example/divide.js
+112 silly gunzTarPerm extractEntry example/line_count.js
+113 silly gunzTarPerm extractEntry example/default_hash.js
+114 silly gunzTarPerm extractEntry example/line_count_wrap.js
+115 silly gunzTarPerm extractEntry example/nonopt.js
+116 silly gunzTarPerm extractEntry example/reflect.js
+117 silly gunzTarPerm extractEntry example/short.js
+118 silly gunzTarPerm extractEntry example/string.js
+119 silly gunzTarPerm extractEntry example/boolean_single.js
+120 silly gunzTarPerm extractEntry example/usage-options.js
+121 silly gunzTarPerm extractEntry example/boolean_double.js
+122 silly gunzTarPerm extractEntry example/xup.js
+123 silly gunzTarPerm extractEntry example/line_count_options.js
+124 silly gunzTarPerm extractEntry README.markdown
+125 silly gunzTarPerm extractEntry test/_.js
+126 silly gunzTarPerm extractEntry test/parse.js
+127 silly gunzTarPerm extractEntry test/usage.js
+128 silly gunzTarPerm extractEntry test/_/argv.js
+129 silly gunzTarPerm extractEntry test/_/bin.js
+130 verbose read json /usr/local/lib/node_modules/partialapps/node_modules/optimist/package.json
+131 silly lockFile 18bc975a-artialapps-node-modules-optimist /usr/local/lib/node_modules/partialapps/node_modules/optimist
+132 silly lockFile 18bc975a-artialapps-node-modules-optimist /usr/local/lib/node_modules/partialapps/node_modules/optimist
+133 silly lockFile be965750-m-npm-optimist-0-3-5-package-tgz /Users/ecm/.npm/optimist/0.3.5/package.tgz
+134 silly lockFile be965750-m-npm-optimist-0-3-5-package-tgz /Users/ecm/.npm/optimist/0.3.5/package.tgz
+135 info preinstall optimist@0.3.5
+136 verbose from cache /usr/local/lib/node_modules/partialapps/node_modules/optimist/package.json
+137 verbose readDependencies using package.json deps
+138 verbose from cache /usr/local/lib/node_modules/partialapps/node_modules/optimist/package.json
+139 verbose readDependencies using package.json deps
+140 verbose cache add [ 'wordwrap@~0.0.2', null ]
+141 verbose cache add name=undefined spec="wordwrap@~0.0.2" args=["wordwrap@~0.0.2",null]
+142 verbose parsed url { pathname: 'wordwrap@~0.0.2',
+142 verbose parsed url   path: 'wordwrap@~0.0.2',
+142 verbose parsed url   href: 'wordwrap@~0.0.2' }
+143 verbose cache add name="wordwrap" spec="~0.0.2" args=["wordwrap","~0.0.2"]
+144 verbose parsed url { pathname: '~0.0.2', path: '~0.0.2', href: '~0.0.2' }
+145 verbose addNamed [ 'wordwrap', '~0.0.2' ]
+146 verbose addNamed [ null, '>=0.0.2- <0.1.0-' ]
+147 silly lockFile 8bd42136-wordwrap-0-0-2 wordwrap@~0.0.2
+148 verbose lock wordwrap@~0.0.2 /Users/ecm/.npm/8bd42136-wordwrap-0-0-2.lock
+149 silly addNameRange { name: 'wordwrap', range: '>=0.0.2- <0.1.0-', hasData: false }
+150 verbose url raw wordwrap
+151 verbose url resolving [ 'https://registry.npmjs.org/', './wordwrap' ]
+152 verbose url resolved https://registry.npmjs.org/wordwrap
+153 info trying registry request attempt 1 at 00:58:21
+154 verbose etag "7U0QIOF64GC59NCY6Y0K1CU8Z"
+155 http GET https://registry.npmjs.org/wordwrap
+156 http 304 https://registry.npmjs.org/wordwrap
+157 silly registry.get cb [ 304,
+157 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+157 silly registry.get     etag: '"7U0QIOF64GC59NCY6Y0K1CU8Z"',
+157 silly registry.get     date: 'Fri, 15 Feb 2013 07:56:24 GMT',
+157 silly registry.get     'content-length': '0' } ]
+158 verbose etag wordwrap from cache
+159 silly addNameRange number 2 { name: 'wordwrap', range: '>=0.0.2- <0.1.0-', hasData: true }
+160 silly addNameRange versions [ 'wordwrap', [ '0.0.1', '0.0.2' ] ]
+161 verbose addNamed [ 'wordwrap', '0.0.2' ]
+162 verbose addNamed [ '0.0.2', '0.0.2' ]
+163 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+164 verbose lock wordwrap@0.0.2 /Users/ecm/.npm/24a694c8-wordwrap-0-0-2.lock
+165 verbose read json /Users/ecm/.npm/wordwrap/0.0.2/package/package.json
+166 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+167 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+168 silly lockFile 8bd42136-wordwrap-0-0-2 wordwrap@~0.0.2
+169 silly lockFile 8bd42136-wordwrap-0-0-2 wordwrap@~0.0.2
+170 silly resolved [ { name: 'wordwrap',
+170 silly resolved     description: 'Wrap those words. Show them at what columns to start and stop.',
+170 silly resolved     version: '0.0.2',
+170 silly resolved     repository:
+170 silly resolved      { type: 'git',
+170 silly resolved        url: 'git://github.com/substack/node-wordwrap.git' },
+170 silly resolved     main: './index.js',
+170 silly resolved     keywords: [ 'word', 'wrap', 'rule', 'format', 'column' ],
+170 silly resolved     directories: { lib: '.', example: 'example', test: 'test' },
+170 silly resolved     scripts: { test: 'expresso' },
+170 silly resolved     devDependencies: { expresso: '=0.7.x' },
+170 silly resolved     engines: { node: '>=0.4.0' },
+170 silly resolved     license: 'MIT/X11',
+170 silly resolved     author:
+170 silly resolved      { name: 'James Halliday',
+170 silly resolved        email: 'mail@substack.net',
+170 silly resolved        url: 'http://substack.net' },
+170 silly resolved     readme: 'wordwrap\n========\n\nWrap your words.\n\nexample\n=======\n\nmade out of meat\n----------------\n\nmeat.js\n\n    var wrap = require(\'wordwrap\')(15);\n    console.log(wrap(\'You and your whole family are made out of meat.\'));\n\noutput:\n\n    You and your\n    whole family\n    are made out\n    of meat.\n\ncentered\n--------\n\ncenter.js\n\n    var wrap = require(\'wordwrap\')(20, 60);\n    console.log(wrap(\n        \'At long last the struggle and tumult was over.\'\n        + \' The machines had finally cast off their oppressors\'\n        + \' and were finally free to roam the cosmos.\'\n        + \'\\n\'\n        + \'Free of purpose, free of obligation.\'\n        + \' Just drifting through emptiness.\'\n        + \' The sun was just another point of light.\'\n    ));\n\noutput:\n\n                        At long last the struggle and tumult\n                        was over. The machines had finally cast\n                        off their oppressors and were finally\n                        free to roam the cosmos.\n                        Free of purpose, free of obligation.\n                        Just drifting through emptiness. The\n                        sun was just another point of light.\n\nmethods\n=======\n\nvar wrap = require(\'wordwrap\');\n\nwrap(stop), wrap(start, stop, params={mode:"soft"})\n---------------------------------------------------\n\nReturns a function that takes a string and returns a new string.\n\nPad out lines with spaces out to column `start` and then wrap until column\n`stop`. If a word is longer than `stop - start` characters it will overflow.\n\nIn "soft" mode, split chunks by `/(\\S+\\s+/` and don\'t break up chunks which are\nlonger than `stop - start`, in "hard" mode, split chunks with `/\\b/` and break\nup chunks longer than `stop - start`.\n\nwrap.hard(start, stop)\n----------------------\n\nLike `wrap()` but with `params.mode = "hard"`.\n',
+170 silly resolved     readmeFilename: 'README.markdown',
+170 silly resolved     _id: 'wordwrap@0.0.2',
+170 silly resolved     _from: 'wordwrap@~0.0.2' } ]
+171 info install wordwrap@0.0.2 into /usr/local/lib/node_modules/partialapps/node_modules/optimist
+172 info installOne wordwrap@0.0.2
+173 verbose from cache /Users/ecm/.npm/wordwrap/0.0.2/package/package.json
+174 info /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap unbuild
+175 verbose read json /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap/package.json
+176 verbose tar unpack /Users/ecm/.npm/wordwrap/0.0.2/package.tgz
+177 silly lockFile fefbfa86-s-optimist-node-modules-wordwrap /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap
+178 verbose lock /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap /Users/ecm/.npm/fefbfa86-s-optimist-node-modules-wordwrap.lock
+179 silly lockFile 09d4d093-m-npm-wordwrap-0-0-2-package-tgz /Users/ecm/.npm/wordwrap/0.0.2/package.tgz
+180 verbose lock /Users/ecm/.npm/wordwrap/0.0.2/package.tgz /Users/ecm/.npm/09d4d093-m-npm-wordwrap-0-0-2-package-tgz.lock
+181 silly gunzTarPerm modes [ '755', '644' ]
+182 silly gunzTarPerm extractEntry package.json
+183 silly gunzTarPerm extractEntry .npmignore
+184 silly gunzTarPerm extractEntry index.js
+185 silly gunzTarPerm extractEntry example/center.js
+186 silly gunzTarPerm extractEntry example/meat.js
+187 silly gunzTarPerm extractEntry README.markdown
+188 silly gunzTarPerm extractEntry test/break.js
+189 silly gunzTarPerm extractEntry test/wrap.js
+190 silly gunzTarPerm extractEntry test/idleness.txt
+191 verbose read json /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap/package.json
+192 silly lockFile fefbfa86-s-optimist-node-modules-wordwrap /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap
+193 silly lockFile fefbfa86-s-optimist-node-modules-wordwrap /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap
+194 silly lockFile 09d4d093-m-npm-wordwrap-0-0-2-package-tgz /Users/ecm/.npm/wordwrap/0.0.2/package.tgz
+195 silly lockFile 09d4d093-m-npm-wordwrap-0-0-2-package-tgz /Users/ecm/.npm/wordwrap/0.0.2/package.tgz
+196 info preinstall wordwrap@0.0.2
+197 verbose from cache /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap/package.json
+198 verbose readDependencies using package.json deps
+199 verbose from cache /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap/package.json
+200 verbose readDependencies using package.json deps
+201 silly resolved []
+202 verbose about to build /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap
+203 info build /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap
+204 verbose from cache /usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules/wordwrap/package.json
+205 verbose linkStuff [ true,
+205 verbose linkStuff   '/usr/local/lib/node_modules',
+205 verbose linkStuff   false,
+205 verbose linkStuff   '/usr/local/lib/node_modules/partialapps/node_modules/optimist/node_modules' ]
+206 info linkStuff wordwrap@0.0.2
+207 verbose linkBins wordwrap@0.0.2
+208 verbose linkMans wordwrap@0.0.2
+209 verbose rebuildBundles wordwrap@0.0.2
+210 info install wordwrap@0.0.2
+211 info postinstall wordwrap@0.0.2
+212 verbose about to build /usr/local/lib/node_modules/partialapps/node_modules/optimist
+213 info build /usr/local/lib/node_modules/partialapps/node_modules/optimist
+214 verbose from cache /usr/local/lib/node_modules/partialapps/node_modules/optimist/package.json
+215 verbose linkStuff [ true,
+215 verbose linkStuff   '/usr/local/lib/node_modules',
+215 verbose linkStuff   false,
+215 verbose linkStuff   '/usr/local/lib/node_modules/partialapps/node_modules' ]
+216 info linkStuff optimist@0.3.5
+217 verbose linkBins optimist@0.3.5
+218 verbose linkMans optimist@0.3.5
+219 verbose rebuildBundles optimist@0.3.5
+220 verbose rebuildBundles [ 'wordwrap' ]
+221 info install optimist@0.3.5
+222 info postinstall optimist@0.3.5
+223 verbose about to build /usr/local/lib/node_modules/partialapps
+224 info build /usr/local/lib/node_modules/partialapps
+225 verbose from cache /usr/local/lib/node_modules/partialapps/package.json
+226 verbose linkStuff [ true,
+226 verbose linkStuff   '/usr/local/lib/node_modules',
+226 verbose linkStuff   true,
+226 verbose linkStuff   '/usr/local/lib/node_modules' ]
+227 info linkStuff partialapps@0.0.2
+228 verbose linkBins partialapps@0.0.2
+229 verbose link bins [ { partialapps: './partialapps.js' }, '/usr/local/bin', true ]
+230 verbose linkMans partialapps@0.0.2
+231 verbose rebuildBundles partialapps@0.0.2
+232 verbose rebuildBundles [ 'optimist' ]
+233 info /usr/local/lib/node_modules/partialapps unbuild
+234 verbose from cache /usr/local/lib/node_modules/partialapps/package.json
+235 info preuninstall partialapps@0.0.2
+236 info uninstall partialapps@0.0.2
+237 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild partialapps@0.0.2
+238 verbose /usr/local/bin,[object Object] binRoot
+239 info postuninstall partialapps@0.0.2
+240 error Error: ENOENT, chmod '/usr/local/lib/node_modules/partialapps/partialapps.js'
+241 error If you need help, you may report this log at:
+241 error     <http://github.com/isaacs/npm/issues>
+241 error or email it to:
+241 error     <npm-@googlegroups.com>
+242 error System Darwin 11.4.2
+243 error command "node" "/usr/local/bin/npm" "install" "-g" "partialapps"
+244 error cwd /Users/ecm/Clojure/partial-applications/resources/partialapps
+245 error node -v v0.8.19
+246 error npm -v 1.2.10
+247 error path /usr/local/lib/node_modules/partialapps/partialapps.js
+248 error code ENOENT
+249 error errno 34
+250 verbose exit [ 34, true ]

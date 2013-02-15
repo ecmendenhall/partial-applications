@@ -21,6 +21,10 @@
     color: #efdcbc; }
   .zenburn a:hover {
     color: #efdcbc; }
+  .zenburn input {
+    color: #dcdccc;
+    border: 2px solid #cbcbb4;
+    background-color: #353535; }
   .zenburn #order {
     background-color: #3f3f3f; }
   .zenburn #colormenu {
@@ -51,6 +55,10 @@
     color: #6c71c4; }
   .solarized-dark a:hover {
     color: #6c71c4; }
+  .solarized-dark input {
+    color: #657b83;
+    border: 2px solid #53656c;
+    background-color: #001b22; }
   .solarized-dark #order {
     background-color: #002b36; }
   .solarized-dark #colormenu {
@@ -81,6 +89,10 @@
     color: #859900; }
   .solarized-light a:hover {
     color: #859900; }
+  .solarized-light input {
+    color: #657b83;
+    border: 2px solid #53656c;
+    background-color: #fcf0d0; }
   .solarized-light #order {
     background-color: #fdf6e3; }
   .solarized-light #colormenu {
@@ -111,6 +123,10 @@
     color: #3e999f; }
   .tomorrow a:hover {
     color: #3e999f; }
+  .tomorrow input {
+    color: #4d4d4c;
+    border: 2px solid #383838;
+    background-color: whitesmoke; }
   .tomorrow #order {
     background-color: white; }
   .tomorrow #colormenu {
@@ -141,6 +157,10 @@
     color: #6699cc; }
   .tomorrow-night a:hover {
     color: #6699cc; }
+  .tomorrow-night input {
+    color: #cccccc;
+    border: 2px solid #b8b8b8;
+    background-color: #232323; }
   .tomorrow-night #order {
     background-color: #2d2d2d; }
   .tomorrow-night #colormenu {
@@ -171,12 +191,18 @@
     color: #ae81ff; }
   .monokai a:hover {
     color: #ae81ff; }
+  .monokai input {
+    color: #f8f8f2;
+    border: 2px solid #eaead7;
+    background-color: #070707; }
   .monokai #order {
     background-color: #111111; }
   .monokai #colormenu {
     background-color: #070707; }
   .monokai #colormenu > ul > li:hover {
     background-color: black; }
+  .monokai #email-form > input {
+    border: 2px solid #f8f8f2; }
 
 body {
   font-size: 40px; }
@@ -188,6 +214,10 @@ footer {
 footer p {
   top: 18px; }
 
+input {
+  font-size: 18px;
+  line-height: 24px; }
+
 .statusline {
   bottom: 12px;
   font-size: 18px;
@@ -196,7 +226,7 @@ footer p {
 
 #colormenu {
   font-size: 18px;
-  bottom: 48px;
+  bottom: 56px;
   right: 28px;
   margin: 0px;
   width: 200px; }
@@ -248,6 +278,10 @@ li {
   footer p {
     top: 13.5px; }
 
+  input {
+    font-size: 13.5px;
+    line-height: 18px; }
+
   .statusline {
     bottom: 9px;
     font-size: 13.5px;
@@ -256,7 +290,7 @@ li {
 
   #colormenu {
     font-size: 13.5px;
-    bottom: 36px;
+    bottom: 42px;
     right: 21px;
     margin: 0px;
     width: 150px; }
@@ -310,6 +344,10 @@ li {
   footer p {
     top: 13.5px; }
 
+  input {
+    font-size: 13.5px;
+    line-height: 18px; }
+
   .statusline {
     bottom: 9px;
     font-size: 13.5px;
@@ -318,7 +356,7 @@ li {
 
   #colormenu {
     font-size: 13.5px;
-    bottom: 36px;
+    bottom: 42px;
     right: 21px;
     margin: 0px;
     width: 150px; }
@@ -362,6 +400,9 @@ body {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 5%;
+  font-family: "Menlo", "Monaco", Monospace; }
+
+input {
   font-family: "Menlo", "Monaco", Monospace; }
 
 ul {
@@ -409,3 +450,9 @@ footer p {
 
 #colormenu {
   position: fixed; }
+
+#colors:hover {
+  cursor: pointer; }
+
+.content > p > a {
+  font-weight: bold; }

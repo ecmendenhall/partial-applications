@@ -52,6 +52,10 @@ $accent3-monokai: #ae81ff;
         color: $accent3;
     }
     a:hover { color: $accent3; }
+    input { color: $text;
+        border: 2px solid darken($text, 8%);
+        background-color: darken($bg, 4%); 
+    }
     #order { background-color: $bg; }
     #colormenu { background-color: darken($bg, 4%); }
     #colormenu > ul > li:hover { background-color: darken($bg, 8%); }
@@ -114,8 +118,11 @@ $accent3-monokai: #ae81ff;
                              $text-monokai, 
                              $accent1-monokai, 
                              $accent2-monokai, 
-                             $accent3-monokai)
-                         }
+                             $accent3-monokai);
+        #email-form > input { 
+                border: 2px solid $text-monokai
+        }
+    }
 }
 
 

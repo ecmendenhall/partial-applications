@@ -30,13 +30,16 @@
              [:p.accent2 "Over 0x100 oblique ideas"]]
             [:div.pull-right
               [:p
-               [:a#again {:href "/"}
-                         "again"] 
+               (if (params :again) 
+                 [:a#again {:href "/"}
+                         "again"]
+                 [:a       {:href "/"}
+                         "home"])
                 " < "
                 [:a {:href "/about/"}
                     "about"] 
                 " < " 
-                [:a#colors {:href "/#"}
+                [:a#colors 
                            "colors"] 
                 " < " 
                 [:a {:href "/jsonapi/"}

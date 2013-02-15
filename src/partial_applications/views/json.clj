@@ -7,8 +7,8 @@
 (defn render-content [params]
     [:div {:class "content small" :id "main"}
      [:h1 "JSON"]
-     [:p "If you prefer your partial applications via machine-readable JSON, simply 
-          GET one of the following URLs:"
+     [:p "If you are a robot who reads only serialized data, or you'd like to build something
+          interesting using these strategies, simply GET one of the following URLs:"
           [:ul [:li [:p [:a {:href "http://localhost:3000/json/"}
                         "http://localhost:3000/json/"]] 
                     [:p "Get a random strategy."]]

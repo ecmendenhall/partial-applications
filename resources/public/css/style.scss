@@ -15,6 +15,11 @@
         top: $unit * 4.5; //18px;
     }
 
+    input {
+        font-size: $unit * 4.5;
+        line-height: $unit * 6;
+    }
+
     .statusline {
         bottom: $unit * 3; //12px;
         font-size: $unit * 4.5; //18px;
@@ -24,7 +29,7 @@
 
     #colormenu {
         font-size: $unit * 4.5; //18px;
-        bottom: $unit * 12; //48px;
+        bottom: $unit * 14; //56px;
         li { margin: 0px;
              height: $unit * 8; //32px;
         }
@@ -88,6 +93,10 @@ body {
     font-family: 'Menlo', 'Monaco', Monospace;
 }
 
+input { 
+    font-family: 'Menlo', 'Monaco', Monospace;
+}
+
 ul { 
    list-style-type: none;
 }
@@ -145,4 +154,12 @@ footer p {
 
 #colormenu {
     position: fixed;
+}
+
+#colors:hover {
+    cursor: pointer;
+}
+
+.content > p > a {
+    font-weight: bold;
 }
