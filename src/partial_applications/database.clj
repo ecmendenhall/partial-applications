@@ -3,10 +3,11 @@
             [monger.collection :as collection]
             [monger.json]
             [cheshire.core :as cheshire]
-            [clojurewerkz.spyglass.client :as memcache]))
+            [clojurewerkz.spyglass.client :as memcache]
+            [partial-applications.secrets :refer [mongo-url]]))
 
 (defn connect [collection]
-  (mongo/connect!)
+  (mongo/connect! {:host mongo-url})
   (mongo/set-db! (mongo/get-db collection)))
 
 (defn connect-memcache [server]

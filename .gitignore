@@ -2,7 +2,8 @@
 /lib
 /classes
 /checkouts
-/resources/css/.sass-cache
+resources/css/.sass-cache
+src/partial_applications/secrets.clj
 pom.xml
 *.jar
 *.class

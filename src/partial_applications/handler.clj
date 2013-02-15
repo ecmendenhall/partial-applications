@@ -8,11 +8,12 @@
             [partial-applications.views.main :as main-view]
             [partial-applications.views.json :as json-view]
             [partial-applications.views.order :as order-view]
-            [partial-applications.views.about :as about-view]))
+            [partial-applications.views.about :as about-view]
+            [partial-applications.secrets :refer [memcache-server]]))
 
 (db/connect "strategies")
 
-(def cache (db/connect-memcache "localhost:11211"))
+(def cache (db/connect-memcache memcache-server))
 
 (metis/defvalidator email-validator
   [:email :email])
