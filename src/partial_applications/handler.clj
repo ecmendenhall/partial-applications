@@ -12,6 +12,7 @@
             [partial-applications.herokuvars :refer [secrets]]))
 
 (def memcache-server (secrets :memcache-server))
+
 (def mongo-user (secrets :mongo-user))
 
 (db/connect mongo-user)

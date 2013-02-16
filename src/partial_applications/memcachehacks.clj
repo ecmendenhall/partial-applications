@@ -12,6 +12,8 @@
            [java.io ByteArrayOutputStream ByteArrayInputStream File]
            [java.net InetSocketAddress]))
 
+;; Memcache hacks
+
 (defn- servers
   [^String server-list]
   (AddrUtil/getAddresses server-list))
@@ -39,6 +41,7 @@
   [^ConnectionFactory cf {:keys [failure-mode transcoder auth-descriptor]}]
   (let [;; Houston, we have a *FactoryFactory here!
         cfb (ConnectionFactoryBuilder. cf)]
+    (.setProtocol cfb (ConnectionFactoryBuilder$Protocol/BINARY))
     (when failure-mode
       (.setFailureMode cfb (to-failure-mode failure-mode)))
     (when transcoder
@@ -61,7 +64,7 @@
      (let [ad (AuthDescriptor/typical username password)]
        (MemcachedClient. (bin-connection-factory :auth-descriptor ad) (servers server-list)))))
 
-(defn connect [server user pw]
+(defn old-connect [server user pw]
   (let [auth (AuthDescriptor/typical user pw)
         tmc-client (bin-connection server
                                    (bin-connection-factory
@@ -89,5 +92,5 @@
     (let [^MemcachedClient client (MemcachedClient. conn-factory servers)]
       client)))
 
-(defn new-connect [server user pw]
+(defn connect [server user pw]
   (make-memcached-client server user pw))

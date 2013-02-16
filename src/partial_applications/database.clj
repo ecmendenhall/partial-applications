@@ -13,9 +13,9 @@
 
 (def memcache-pw (secrets :memcache-pw))
 
-(defn connect [collection]
-  (mongo/connect-via-uri! mongo-url)
-  (mongo/set-db! (mongo/get-db collection)))
+(defn connect [username]
+  (mongo/connect-via-uri! (System/getenv "MONGOLAB_URI"))
+  (mongo/set-db! (mongo/get-db username)))
 
 (defn connect-memcache [server]
   (mchacks/connect server memcache-user memcache-pw))
