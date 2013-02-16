@@ -4,18 +4,17 @@
             [monger.json]
             [cheshire.core :as cheshire]
             [clojurewerkz.spyglass.client :as memcache]
-            [partial-applications.memcachehacks :as mchacks]
-            [partial-applications.herokuvars :refer [secrets]]))
+            [partial-applications.memcachehacks :as mchacks]))
 
-(def mongo-url (secrets :mongo-url))
+(def mongo-uri (System/getenv "MONGOLAB_URI"))
+  
+(def memcache-user (System/getenv "MEMCACHE_USERNAME"))
 
-(def memcache-user (secrets :memcache-user))
-
-(def memcache-pw (secrets :memcache-pw))
+(def memcache-pw (System/getenv "MEMCACHE_PASSWORD"))
 
 (defn connect [username]
-  (mongo/connect-via-uri! (System/getenv "MONGOLAB_URI"))
-  (mongo/set-db! (mongo/get-db username)))
+  (do (mongo/connect-via-uri! mongo-uri)
+      (mongo/set-db! (mongo/get-db username))))
 
 (defn connect-memcache [server]
   (mchacks/connect server memcache-user memcache-pw))

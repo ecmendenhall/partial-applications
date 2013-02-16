@@ -8,14 +8,13 @@
             [partial-applications.views.main :as main-view]
             [partial-applications.views.json :as json-view]
             [partial-applications.views.order :as order-view]
-            [partial-applications.views.about :as about-view]
-            [partial-applications.herokuvars :refer [secrets]]))
+            [partial-applications.views.about :as about-view]))
 
-(def memcache-server (secrets :memcache-server))
+(def memcache-server (System/getenv "MEMCACHE_SERVERS"))
 
-(def mongo-user (secrets :mongo-user))
+(def mongo-dbname (System/getenv "MONGOLAB_USER"))
 
-(db/connect mongo-user)
+(db/connect mongo-dbname)
 
 (def cache (db/connect-memcache memcache-server))
 
