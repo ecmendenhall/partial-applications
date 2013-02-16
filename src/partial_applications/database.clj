@@ -12,7 +12,7 @@
 
 (def memcache-pw (System/getenv "MEMCACHIER_PASSWORD"))
 
-(defn connect [username]
+(defn connect-mongo [username]
   (do (mongo/connect-via-uri! mongo-uri)
       (mongo/set-db! (mongo/get-db username))))
 

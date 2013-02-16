@@ -14,7 +14,7 @@
 
 (def mongo-dbname (System/getenv "MONGOLAB_USER"))
 
-(db/connect mongo-dbname)
+(db/connect-mongo mongo-dbname)
 
 (def cache (db/connect-memcache memcache-server))
 
