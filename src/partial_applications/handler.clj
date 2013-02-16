@@ -11,8 +11,8 @@
             [partial-applications.views.about :as about-view]
             [partial-applications.herokuvars :refer [secrets]]))
 
-(def memcache-server (heroku-secrets :memcache-server))
-(def mongo-user (heroku-secrets: :mongo-user))
+(def memcache-server (secrets :memcache-server))
+(def mongo-user (secrets: :mongo-user))
 
 (db/connect mongo-user)
 
