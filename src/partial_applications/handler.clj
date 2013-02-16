@@ -10,7 +10,7 @@
             [partial-applications.views.order :as order-view]
             [partial-applications.views.about :as about-view]))
 
-(def memcache-server (System/getenv "MEMCACHE_SERVERS"))
+(def memcache-server (System/getenv "MEMCACHIER_SERVERS"))
 
 (def mongo-dbname (System/getenv "MONGOLAB_USER"))
 

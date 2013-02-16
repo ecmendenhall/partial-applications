@@ -2,7 +2,7 @@
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [compojure "1.1.5"]
                  [com.novemberain/monger "1.4.2"]
-                 [clojurewerkz/spyglass "1.1.0-SNAPSHOT"]
+                 [clojurewerkz/spyglass "1.1.0-beta2"]
                  [metis "0.3.0"]
                  [lib-noir "0.3.5"]
                  [hiccup "1.0.2"]

@@ -8,9 +8,9 @@
 
 (def mongo-uri (System/getenv "MONGOLAB_URI"))
   
-(def memcache-user (System/getenv "MEMCACHE_USERNAME"))
+(def memcache-user (System/getenv "MEMCACHIER_USERNAME"))
 
-(def memcache-pw (System/getenv "MEMCACHE_PASSWORD"))
+(def memcache-pw (System/getenv "MEMCACHIER_PASSWORD"))
 
 (defn connect [username]
   (do (mongo/connect-via-uri! mongo-uri)
