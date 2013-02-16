@@ -5,7 +5,6 @@
 resources/css/.sass-cache
 src/partial_applications/secrets.clj
 pom.xml
-*.jar
 *.class
 .lein-deps-sum
 .lein-failures

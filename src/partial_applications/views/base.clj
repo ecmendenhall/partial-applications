@@ -20,6 +20,7 @@
                 :content "width=device-width, initial-scale=1.0"}]
         (include-css (str (static-path "css") "style.css"))
         (include-js "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
+        (include-js  (str (static-path "js") "analytics.js"))
         (include-js  (str (static-path "js") "pa-main.js"))
         [:title "Partial Applications"]]
       [:body {:class theme}

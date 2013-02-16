@@ -17,9 +17,9 @@
       :source-paths ["src/partial_applications/cljs"]
       :compiler {
         :output-to "resources/public/js/pa-main.js"
-        :optimizations :whitespace
+        :optimizations :advanced
         :externs ["resources/jquery.js"]
-        :pretty-print true}}]}
+        :pretty-print false}}]}
   :ring {:handler partial-applications.handler/app}
   :profiles
   {:dev {:dependencies [[ring-mock "0.1.3"]]}})

@@ -8,7 +8,8 @@
             [partial-applications.views.main :as main-view]
             [partial-applications.views.json :as json-view]
             [partial-applications.views.order :as order-view]
-            [partial-applications.views.about :as about-view]))
+            [partial-applications.views.about :as about-view]
+            [partial-applications.views.notfound :as notfound-view]))
 
 (metis/defvalidator email-validator
   [:email :email])
@@ -63,6 +64,9 @@
         (order-view/render {:message "Thanks!"}))
     (order-view/render {}))))
 
+(defn notfound-handler [_]
+  (notfound-view/render {}))
+
 (defroutes app-routes
   (GET "/" [] main-handler)
   (GET "/jsonapi/" [] jsonapi-handler)
@@ -74,7 +78,7 @@
   (POST "/email/" {params :params} (save-email params))
   (route/resources "/css/" {:root "public/css"})
   (route/resources "/js/" {:root "public/js"})
-  (route/not-found "Not Found"))
+  (route/not-found notfound-handler))
 
 (def app
   (handler/site app-routes))
