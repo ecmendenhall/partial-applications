@@ -10,25 +10,17 @@
             [partial-applications.views.order :as order-view]
             [partial-applications.views.about :as about-view]))
 
-(def memcache-server (System/getenv "MEMCACHIER_SERVERS"))
-
-(def mongo-dbname (System/getenv "MONGOLAB_USER"))
-
-(db/connect-mongo mongo-dbname)
-
-(def cache (db/connect-memcache memcache-server))
-
 (metis/defvalidator email-validator
   [:email :email])
 
 (defn get-strategy [n]
-  (db/cached-get cache db/get-strategy n))
+  (db/cached-get db/cache db/get-strategy n))
 
 (defn get-strategy-json [n]
-  (db/cached-json-get cache db/get-strategy-json n))
+  (db/cached-json-get db/cache db/get-strategy-json n))
 
 (defn get-all-json [collection]
-  (db/cached-json-get cache db/get-all-json collection))
+  (db/cached-json-get db/cache db/get-all-json collection))
 
 (defn random-strategy-number []
   (let [collection-size (int (db/count-coll "strategies"))]
@@ -88,6 +80,7 @@
   (handler/site app-routes))
 
 (defn start [port]
+  (db/connect-dbs)
   (run-jetty app {:port port :join? false}))
 
 (defn -main [& args]
