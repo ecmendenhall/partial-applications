@@ -9,9 +9,12 @@
             [partial-applications.views.json :as json-view]
             [partial-applications.views.order :as order-view]
             [partial-applications.views.about :as about-view]
-            [partial-applications.secrets :refer [memcache-server]]))
+            [partial-applications.herokuvars :refer [secrets]]))
 
-(db/connect "strategies")
+(def memcache-server (heroku-secrets :memcache-server))
+(def mongo-user (heroku-secrets: :mongo-user))
+
+(db/connect mongo-user)
 
 (def cache (db/connect-memcache memcache-server))
 
