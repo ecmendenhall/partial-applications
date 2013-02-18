@@ -46,7 +46,7 @@
                 [:a {:href "/jsonapi/"}
                     "json"] 
                 " < " 
-                [:a {:href ""}
+                [:a {:href "/cli/"}
                     "cli"]]]
             [:div#order
              [:p [:a {:href "/order/"} ":OrderCards!"]]

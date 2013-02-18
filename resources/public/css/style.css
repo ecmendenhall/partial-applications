@@ -31,6 +31,8 @@
     background-color: #353535; }
   .zenburn #colormenu > ul > li:hover {
     background-color: #2b2b2b; }
+  .zenburn #cli {
+    color: #dcdccc; }
 
 .solarized-dark {
   background-color: #002b36; }
@@ -65,6 +67,8 @@
     background-color: #001b22; }
   .solarized-dark #colormenu > ul > li:hover {
     background-color: #000b0d; }
+  .solarized-dark #cli {
+    color: #657b83; }
 
 .solarized-light {
   background-color: #fdf6e3; }
@@ -99,6 +103,8 @@
     background-color: #fcf0d0; }
   .solarized-light #colormenu > ul > li:hover {
     background-color: #faeabd; }
+  .solarized-light #cli {
+    color: #657b83; }
 
 .tomorrow {
   background-color: white; }
@@ -133,6 +139,8 @@
     background-color: whitesmoke; }
   .tomorrow #colormenu > ul > li:hover {
     background-color: #ebebeb; }
+  .tomorrow #cli {
+    color: #4d4d4c; }
 
 .tomorrow-night {
   background-color: #2d2d2d; }
@@ -167,6 +175,8 @@
     background-color: #232323; }
   .tomorrow-night #colormenu > ul > li:hover {
     background-color: #191919; }
+  .tomorrow-night #cli {
+    color: #cccccc; }
 
 .monokai {
   background-color: #111111; }
@@ -201,6 +211,8 @@
     background-color: #070707; }
   .monokai #colormenu > ul > li:hover {
     background-color: black; }
+  .monokai #cli {
+    color: #f8f8f2; }
   .monokai #email-form > input {
     border: 2px solid #f8f8f2; }
 
@@ -267,6 +279,11 @@ ul p {
 li {
   margin-top: 36px; }
 
+#cli li {
+  margin-top: 18px; }
+#cli li:last-child {
+  margin-top: 0px; }
+
 @media (min-width: 0px) and (max-width: 550px) {
   body {
     font-size: 30px; }
@@ -330,6 +347,11 @@ li {
 
   li {
     margin-top: 27px; }
+
+  #cli li {
+    margin-top: 13.5px; }
+  #cli li:last-child {
+    margin-top: 0px; }
 
   .accent2 {
     display: none; } }
@@ -395,7 +417,12 @@ li {
     margin-bottom: 3px; }
 
   li {
-    margin-top: 27px; } }
+    margin-top: 27px; }
+
+  #cli li {
+    margin-top: 13.5px; }
+  #cli li:last-child {
+    margin-top: 0px; } }
 body {
   margin-left: 20%;
   margin-right: 20%;

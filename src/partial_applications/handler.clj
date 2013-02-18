@@ -9,6 +9,7 @@
             [partial-applications.views.json :as json-view]
             [partial-applications.views.order :as order-view]
             [partial-applications.views.about :as about-view]
+            [partial-applications.views.cli :as cli-view]
             [partial-applications.views.notfound :as notfound-view]))
 
 (metis/defvalidator email-validator
@@ -42,6 +43,9 @@
 (defn about-handler [_]
   (about-view/render {}))
 
+(defn cli-handler [_]
+  (cli-view/render {}))
+
 (defn json-id-handler [id]
   (let [strategy-json (get-strategy-json (Integer/parseInt id))]
     {:headers {"Content-Type" "application/json"}
@@ -73,6 +77,7 @@
   (GET "/order/" [] order-handler)
   (GET "/about/" [] about-handler)
   (GET "/json/" [] json-handler)
+  (GET "/cli/" [] cli-handler)
   (GET ["/json/id/:id/" :id #"[0-9]+"] [id] (json-id-handler id))
   (GET ["/json/all/"] [] json-all-handler)
   (POST "/email/" {params :params} (save-email params))

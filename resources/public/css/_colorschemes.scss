@@ -59,6 +59,7 @@ $accent3-monokai: #ae81ff;
     #order { background-color: $bg; }
     #colormenu { background-color: darken($bg, 4%); }
     #colormenu > ul > li:hover { background-color: darken($bg, 8%); }
+    #cli { color: $text; }
 
 }
 

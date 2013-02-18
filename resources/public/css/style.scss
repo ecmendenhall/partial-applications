@@ -73,6 +73,12 @@
     }
 
     li { margin-top: $unit * 9; }
+
+    #cli { 
+        li { margin-top: $unit * 4.5; }
+        li:last-child { margin-top: 0px; }
+    }
+
 }
 
 @include scale(4px);

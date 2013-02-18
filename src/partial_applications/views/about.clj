@@ -17,7 +17,7 @@
       [:a {:href "http://enoshop.co.uk/product/oblique-strategies"} " here"] ".)"]
      [:p "This site is written in " 
       [:a {:href "http://clojure.org/"} "Clojure"] " and " 
-      [:a {:href "https://github.com/clojure/clojurescript"} "ClojureScript"] " . "
+      [:a {:href "https://github.com/clojure/clojurescript"} "ClojureScript"] ". "
       "It's built on top of some wonderful libraries, including " 
       [:a {:href "https://github.com/weavejester/compojure"} "Compojure"] ", "
       [:a {:href "https://github.com/weavejester/hiccup"} "Hiccup"] ", " 
